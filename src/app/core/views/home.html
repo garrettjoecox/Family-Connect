@@ -1,6 +1,12 @@
-<div ng-repeat="message in home.messages">
-  <div class="message z-depth-1 lighten-2 bg-{{message.color}}">{{message.username}}: {{message.text}}</div>
-</div>
+<ul>
+  <li class="messageli" ng-repeat="message in home.messages">
+    <div class="messageContainer">
+      <div ng-if="message.username === 'Garrett'" class="blank"></div>
+      <div class="message z-depth-1 lighten-2 bg-{{message.color}}"><span>{{message.username}}:</span><span>{{message.text}}</span></div>
+      <div ng-if="message.username !== 'Garrett'" class="blank"></div>
+    </div>
+  </li>
+</ul>
 <footer class="footer bg-grey z-depth-1 lighten-4">
   <form ng-submit="home.sendMessage()">
     <div class="col-sm-6">
