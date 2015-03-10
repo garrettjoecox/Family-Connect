@@ -3,14 +3,15 @@
 angular.module('app.core')
   .controller('HomeController', HomeController);
 
-function HomeController($firebaseArray){
+function HomeController($firebaseArray, $rootScope, $anchorScroll){
   this.messages = $firebaseArray(new Firebase("https://yourfamily.firebaseio.com/Families/Cox/Messages"));
   this.newMessage = {
-    username: 'Garrett',
+    username: $rootScope.username,
     text: '',
     timestamp: '',
-    color: 'orange'
+    color: $rootScope.color
   };
+
   this.sendMessage = sendMessage;
 }
 

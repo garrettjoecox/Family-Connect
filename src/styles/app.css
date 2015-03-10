@@ -1,8 +1,8 @@
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
     height: 0px !important;
     width: 0px !important;
     display: none !important;
-}*/
+}
 *{
   box-sizing: border-box;
 }
@@ -66,11 +66,20 @@ body{
   z-index: 1;
   text-shadow: 0px 0px 20px black;
 }
+.cityName {
+  text-align: center;
+  left: calc(50% - 140px);
+  margin-top: -10%;
+  color: white;
+  z-index: 1;
+  text-shadow: 0px 0px 20px black;
+}
 .family {
   width: 100%;
   top: 0;
   z-index: -1
 }
+
 ul {
   list-style-type: none;
   padding: 0px;
@@ -105,9 +114,6 @@ ul {
   width: 75%;
   word-wrap: break-word;
 }
-
-
-
 
 
 

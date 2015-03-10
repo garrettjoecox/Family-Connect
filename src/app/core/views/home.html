@@ -1,9 +1,9 @@
 <ul>
   <li class="messageli" ng-repeat="message in home.messages">
     <div class="messageContainer">
-      <div ng-if="message.username === 'Garrett'" class="blank"></div>
-      <div class="message z-depth-1 lighten-2 bg-{{message.color}}"><span>{{message.username}}:</span><span>{{message.text}}</span></div>
-      <div ng-if="message.username !== 'Garrett'" class="blank"></div>
+      <div ng-if="message.username === username" class="blank"></div>
+      <div class="message z-depth-1 lighten-2 bg-{{message.color}}"><span>{{message.username}}:</span><span> {{message.text}}</span></div>
+      <div ng-if="message.username !== username" class="blank"></div>
     </div>
   </li>
 </ul>
