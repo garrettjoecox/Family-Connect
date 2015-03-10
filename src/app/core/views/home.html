@@ -1,0 +1,17 @@
+  <div ng-repeat="message in home.messages">
+    <p>{{message.username}}: {{message.text}}</p>
+  </div>
+<div class="block"></div>
+
+<footer class="footer bg-grey z-depth-1 lighten-4">
+  <form ng-submit="home.sendMessage()">
+    <div class="col-sm-6">
+      <div class="input-group">
+        <input ng-model="home.newMessage.text" type="text" class="form-control" placeholder="Type your message...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">send</button>
+        </span>
+      </div>
+    </div>
+  </form>
+</footer>
