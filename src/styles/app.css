@@ -114,6 +114,13 @@ ul {
   width: 75%;
   word-wrap: break-word;
 }
+.settingsTitle {
+  text-align: center;
+}
 
-
+.settingsForm {
+  width: 200px;
+  position: absolute;
+  left: calc(50% - 100px);
+}
 
