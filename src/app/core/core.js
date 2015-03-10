@@ -9,5 +9,4 @@ angular.module('app.core', ['ui.router', 'firebase'])
         controller: 'HomeController as home'
       });
   });
-
 }).call(this);

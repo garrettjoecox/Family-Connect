@@ -56,3 +56,10 @@ body{
 .footer .form-control {
   float: none;
 }
+.message {
+  z-index: 1000;
+  justify-content: flex-end;
+  margin: 10px;
+  min-width: 100px;
+  max-width: 250px;
+}

@@ -8,7 +8,8 @@ function HomeController($firebaseArray){
   this.newMessage = {
     username: 'Garrett',
     text: '',
-    timestamp: ''
+    timestamp: '',
+    color: 'green'
   };
   this.sendMessage = sendMessage;
 }
